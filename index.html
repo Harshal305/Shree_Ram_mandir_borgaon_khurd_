@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ram Mandir Lucky Draw</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    min-height: 100vh;
+}
+
+.scroll-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scroll-content {
+    animation: scrollUp 12s linear infinite;
+}
+
+@keyframes scrollUp {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+h1 {
+    background: orange;
+    padding: 10px;
+}
+
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+img {
+    width: 80px;
+    height: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1>🚩 श्री राम मंदिर लकी ड्रॉ बोरगांव खुर्द 🚩</h1>
+
+<div class="scroll-container">
+<div class="scroll-content">
+
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Prize</th>
+<th>Image</th>
+<th>Name</th>
+<th>Coupon</th>
+</tr>
+</thead>
+
+<tbody id="resultTable"></tbody>
+
+</table>
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+function loadData() {
+    fetch('data.json?nocache=' + new Date().getTime())
+    .then(res => res.json())
+    .then(data => {
+
+        let table = document.getElementById("resultTable");
+        table.innerHTML = "";
+
+        data.forEach((item, index) => {
+
+            let row = `
+            <tr>
+            <td>${index+1}</td>
+            <td>${item.prize}</td>
+            <td><img src="${item.image}.jpg"></td>
+            <td>${item.name}</td>
+            <td>${item.coupon}</td>
+            </tr>`;
+
+            table.innerHTML += row;
+        });
+
+    })
+    .catch(err => console.log(err));
+}
+
+// First load
+loadData();
+
+// Auto update every 2 minutes
+setInterval(loadData, 120000);
+
+</script>
+
+</body>
+</html>
