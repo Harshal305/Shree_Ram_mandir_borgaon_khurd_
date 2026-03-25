@@ -4,19 +4,19 @@
     "name": "Harshal",
     "add": "Borgaon khurd",
     "coupon": "101",
+    "image": "12"
   },
   {
-    "prize": "1",
+    "prize": "TV",
     "name": "Amit",
-    "add": "Burhanpur",
     "coupon": "102",
- 
+    "image": "2"
   },
   {
-    "prize": "5",
+    "prize": "TV",
     "name": "Patil",
-    "add": "Burhanpur",
     "coupon": "108",
-  
+    "image": "9"
   }
 ]
+
