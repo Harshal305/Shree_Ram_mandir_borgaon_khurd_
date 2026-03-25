@@ -1,22 +1,5 @@
 [
-  {
-    "prize": "12",
-    "name": "Harshal",
-    "add": "Borgaon khurd",
-    "coupon": "101",
-    "image": "12"
-  },
-  {
-    "prize": "TV",
-    "name": "Amit",
-    "coupon": "102",
-    "image": "2"
-  },
-  {
-    "prize": "TV",
-    "name": "Patil",
-    "coupon": "108",
-    "image": "9"
-  }
-]
-
+  { "prize": "1","name": "Harshal","add": "Borgaon khurd","coupon": "101","image": "12"},
+  { "prize": "12","name": "Harshal","add": "Borgaon khurd","coupon": "111","image": "12"},
+  { "prize": "12","name": "Harshal","add": "Borgaon khurd","coupon": "121","image": "12"},
+  { "prize": "12","name": "Harshal","add": "Borgaon khurd","coupon": "161","image": "12"}]
