@@ -5,10 +5,18 @@
     "add": "Borgaon khurd",
     "coupon": "101",
   },
-{
-    "prize": "12",
-    "name": "Vaishnvi",
-    "add": "vakkhhari",
-    "coupon": "1511",
+  {
+    "prize": "1",
+    "name": "Amit",
+    "add": "Burhanpur",
+    "coupon": "102",
+ 
+  },
+  {
+    "prize": "5",
+    "name": "Patil",
+    "add": "Burhanpur",
+    "coupon": "108",
+  
   }
 ]
