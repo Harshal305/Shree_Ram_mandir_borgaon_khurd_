@@ -4,7 +4,6 @@
     "name": "Harshal",
     "add": "Borgaon khurd",
     "coupon": "101",
-    "image": "12"
   },
   {
     "prize": "10",
@@ -19,5 +18,11 @@
     "add": "Borgaon khurd",
     "coupon": "108",
     "image": "9"
+  },
+{
+    "prize": "12",
+    "name": "Vaishnvi",
+    "add": "vakkhhari",
+    "coupon": "1511",
   }
 ]
