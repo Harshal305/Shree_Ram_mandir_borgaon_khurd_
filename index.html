@@ -77,7 +77,8 @@ img {
 <th>Prize</th>
 <th>Full Name</th>
 <th>Address</th>
-<th>Coupon</th>
+<th>coupon No</th>
+<th>Mobile No</th>
 </tr>
 </thead>
 
@@ -125,6 +126,7 @@ function displayData() {
         <td>${item.name}</td>
         <td>${item.add}</td>
         <td>${item.coupon}</td>
+        <td>${item.mon}</td>
         </tr>`;
         table.innerHTML += row;
     });
